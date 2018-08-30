@@ -1,0 +1,84 @@
+
+.heading-quad {
+    display: inline-block;
+    color: $color-black;
+    font-size: 2.5rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    padding-top: .5rem; //make sure to edit the pt for li a and active inorder to align
+
+    &:after {
+        content: ""; 
+        display: block; 
+        width: 3.7rem;
+        border-bottom: 1.5px solid $color-black;
+    }
+}
+
+.heading-list {
+    display: flex;
+    padding-top: 6rem;
+
+    & li:nth-child(2) {
+        margin-left: auto;
+    }
+    
+    & li {
+        display: inline-block;
+        list-style-type: none;
+    }
+    & li:not(:last-child) {
+        margin-right: 4rem;
+    }
+    & li a {
+        display: block;
+        margin-top: 1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 450;
+        padding-top: .5rem;
+        transition: all .2s;
+        
+    }
+    & li a:hover {
+        color: $color-blue-light;
+    }
+
+    .active {
+        border: solid 2px $color-blue-light;
+        padding: .5rem 2rem;
+        color: $color-blue-light;
+    }
+}
+
+.portfolio {
+    position: relative;
+    max-width: 27rem;
+    max-height: 27rem;
+    &-img {
+        width: 100%;
+        height: auto;
+        transform: scale(1.02);
+        backface-visibility: hidden;
+        transition: all .3s;
+    }
+    &-caption{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden; //this fixes animation stuttering
+    }
+    &:hover &-caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    &:hover &-img {
+        transform: scale(1);
+        filter: blur(3px) brightness(60%);
+    }
+    
+}

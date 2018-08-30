@@ -1,0 +1,53 @@
+//margin top
+.mt-auto {
+    margin-top: auto;
+}
+.mt-1 {
+    margin-top: 1rem;
+}
+.mt-2 {
+    margin-top: 2rem;
+}
+.mt-4 {
+    margin-top: 4rem;
+}
+.mt-6 {
+    margin-top: 6rem;
+}
+.mt-8 {
+    margin-top: 8rem;
+}
+
+//margin bottom
+.mb-auto {
+    margin-bottom: auto;
+}
+.mb-1 {
+    margin-bottom: 1rem;
+}
+.mb-2 {
+    margin-bottom: 2rem;
+}
+.mb-4 {
+    margin-bottom: 4rem;
+}
+.mb-6 {
+    margin-bottom: 6rem;
+}
+.mb-8 {
+    margin-bottom: 8rem;
+}
+
+//text alignment
+.text-center {
+    text-align: center;
+}
+
+//text colors
+.black {
+    color: $color-black !important;
+}
+
+.white {
+    color: $color-white !important;
+}

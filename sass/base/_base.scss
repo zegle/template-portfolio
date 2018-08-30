@@ -1,0 +1,24 @@
+*, *::after, *::before { //default global styles for the page
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;/*calculates fontsize defualt of 1 rem to be 10px*/
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 200;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    color: $color-white;
+    box-sizing: border-box;
+}
+
+#wrapper { //1170px
+    width: 117rem;
+    margin: 0 auto;
+}
