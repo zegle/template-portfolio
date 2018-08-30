@@ -1,0 +1,35 @@
+
+.about-text {
+    line-height: 2rem;
+}
+
+.about-icons {
+    font-size: 2.5rem;
+    display: flex;
+
+    & li {
+        display: inline-block;
+        list-style-type: none;
+        border: 1px solid $color-white;
+        border-radius: 2px;
+        width: 100%;
+        max-width: 5.5rem;
+        padding: 1.2rem 1rem;
+        text-align: center;
+    }
+    & li:not(:last-child) {
+        margin-right: 1.5rem;
+    }
+    & li a {
+        display: block;
+        text-decoration: none;
+        color: $color-white;
+        transition: all .2s;
+        
+    }
+    & li a:hover {
+        color: $color-blue-light;
+    }
+    
+}
+

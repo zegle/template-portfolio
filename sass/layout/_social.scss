@@ -1,0 +1,38 @@
+.heading-quad-white {
+    display: inline-block;
+    color: $color-white;
+    font-size: 2.5rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    padding-top: .5rem; //make sure to edit the pt for li a, li i and active inorder to align
+
+    &:after {
+        content: ""; 
+        display: block; 
+        width: 3.7rem;
+        border-bottom: 1.5px solid $color-white;
+    }
+}
+
+.heading-list {
+    //this class is inherted from another portfolio
+    & li i {
+        display: block;
+        margin-top: 1rem;
+        text-decoration: none;
+        font-size: 2rem;
+        padding-top: .5rem;
+    }
+}
+
+.social {
+    
+    &-text {
+        font-size: 2.5rem;
+    }
+    &-link {
+        text-decoration: none;
+        font-weight: 400;
+        color: $color-white;
+    }
+}

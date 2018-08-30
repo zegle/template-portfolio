@@ -1,0 +1,31 @@
+
+.footer-list {
+    display: flex;
+
+    & li:last-child {
+        margin-left: auto;
+    }
+    
+    & li {
+        font-size: 1.1rem;
+        display: inline-block;
+        list-style-type: none;
+        color: $color-black;
+    }
+    & li:not(:last-child) {
+        margin-right: 2rem;
+    }
+    & li a {
+        display: block;
+        margin-top: .1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-black;
+        font-weight: 500;
+        transition: all .2s;
+        
+    }
+    & li a:hover {
+        color: $color-blue-light;
+    }
+}

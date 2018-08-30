@@ -6,3 +6,21 @@
 .section-awesome {
     background-color: $color-gray-dark;
 }
+
+.section-social {
+    background-color: $color-blue-light;
+}
+
+.section-about {
+    background-image: url(../images/aboutbg.jpg); 
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+
+.section-contact {
+    background-image: url(../images/contactbg.jpg); 
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}

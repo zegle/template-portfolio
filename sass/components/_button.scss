@@ -1,55 +1,28 @@
 .btn {
+    transition: .2s all;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border: 1px solid transparent;
+    padding: 1.75rem 4rem;
+    background-color: $color-blue-light;
+    color: $color-white;
+    display: inline-block;
+    text-decoration: none;
     
-    &:link, &:visited {
-        position: relative;
-        display: inline-block;
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 1.5rem 4rem;
-        border-radius: 10rem;
-        transition: all .2s;
-    }
-
     &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba($color-black,.2);
-
-        &::after {
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0;
-        }
+        background-color: transparent;
+        border: 1px solid $color-white;
+        padding: 1.75rem 4rem;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black-dark, .15);
+        transform: translateY(-2px);
     }
-
     &:active {
-        transform: translateY(-1px);
-        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
-    }
-
-    &-white {
-        background-color: $color-white;
-        color: $color-gray-dark;
-
-        &::after {
-            background-color: $color-white;
-        }
-    }
-
-    &::after {
-        content: '';
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        border-radius: 10rem;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: all .4s;
-    } 
-
-    &-animated {
-        animation: moveInBottom .5s ease-out .85s;
-        animation-fill-mode: backwards;
+        box-shadow: 0 .5rem 1rem rgba($color-black-dark, .15);
+        transform: translateY(0);
     }
 
     &-text {
@@ -59,20 +32,20 @@
         &:link, &:visited {
             font-size: 1.2rem;
             font-weight: 400;
-            color: $color-black;
+            color: $color-black-dark;
             display: inline-block;
             text-decoration: none;
-            border: 1px solid $color-black;
+            border: 1px solid $color-black-dark;
             padding: 1rem 4rem;
         }
         &:hover {
-            background-color: $color-black;
+            background-color: $color-black-dark;
             color: $color-white;
-            box-shadow: 0 1rem 2rem rgba($color-black, .15);
+            box-shadow: 0 1rem 2rem rgba($color-black-dark, .15);
             transform: translateY(-2px);
         }
         &:active {
-            box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+            box-shadow: 0 .5rem 1rem rgba($color-black-dark, .15);
             transform: translateY(0);
         }
     }
