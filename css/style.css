@@ -232,7 +232,8 @@ footer {
       .header-nav-list li a:hover {
         color: #4bcaff; }
       .header-nav-list .active {
-        border: solid 1.5px #FFF;
+        color: #4bcaff;
+        border: solid 1.5px #4bcaff;
         padding: .7rem 2rem; }
   .header-text-box {
     position: absolute;
