@@ -18,11 +18,39 @@ body {
     box-sizing: border-box;
 }
 
-#wrapper { //1170px
-    width: 117rem;
+.wrapper { //1170px
+    width: 100%;
+    max-width: 117rem;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 footer {
     background-color: #353f47;
+}
+
+@media (max-width:767px) {
+    .wrapper { //1170px
+        width: 100%;
+        margin: 0 auto;
+        padding: 0rem;
+    }
+}
+
+@media (min-width:768px) {
+    .wrapper { //1170px
+        width: 100%;
+        max-width: 85rem;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+}
+
+@media (min-width:992px) {
+    .wrapper { //1170px
+        width: 100%;
+        max-width: 117rem;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
 }

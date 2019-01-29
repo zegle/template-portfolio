@@ -1,8 +1,24 @@
-
-@keyframes moveInBottom {
+.fadeIn {
+    animation: fadeIn .3s ease-in;
+}
+@keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translateY(3rem);}
+    }
     100% {
         opacity: 1;
-        transform: translate(0);} }
+    }
+}
+@-moz-keyframes fadeIn {0% {opacity: 0;} 100% {opacity: 1;}}
+.fadeOut {
+    animation: fadeOut .5s ease-out;
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-moz-keyframes fadeOut {0% {opacity: 1;} 100% {opacity: 0;}}
