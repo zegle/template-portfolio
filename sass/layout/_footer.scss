@@ -1,6 +1,7 @@
 
 .footer-list {
     display: flex;
+    flex-wrap: wrap;
 
     & li:last-child {
         margin-left: auto;

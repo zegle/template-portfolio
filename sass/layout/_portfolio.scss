@@ -17,6 +17,7 @@
 
 .heading-list {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 6rem;
 
     & li:nth-child(2) {
@@ -55,8 +56,8 @@
 
 .portfolio {
     position: relative;
-    max-width: 27rem;
-    max-height: 27rem;
+    max-width: 40rem;
+    max-height: 40rem;
     &-img {
         width: 100%;
         height: auto;

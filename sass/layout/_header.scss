@@ -10,6 +10,15 @@
         background-color: rgba($color-black, .5);
         padding: 3.5rem 0;
 
+        &-fixed {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+            background-color: #515f67;
+        }
+
         &-logo {
             display: inline-block;
             text-transform: uppercase;
@@ -25,6 +34,7 @@
         }
         &-list {
             display: flex;
+            flex-wrap: wrap;
             font-size: 1.5rem;
             font-weight: 500;
             text-transform: uppercase;
@@ -52,7 +62,8 @@
                 color: $color-blue-light;
             }
             .active {
-                border: solid 1.5px $color-white;
+                color: $color-blue-light;
+                border: solid 1.5px $color-blue-light;
                 padding: .7rem 2rem;
             }
         }
